@@ -17,7 +17,7 @@ module.exports = {
   "skipCompile": [
     "src/**/*.vue",
     "src/assets/*.png",
-    "www/static/*"
+    "www/static/public/favicon.ico"
   ],
   "filesignore": [
     "src/controller/index.tpl.js",
