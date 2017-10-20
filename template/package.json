@@ -6,7 +6,11 @@
     "start": "node development.js",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
-    "lint-fix": "eslint --fix src/"
+    "lint-fix": "eslint --fix src/",
+    "fe": "react-scripts start",
+    "fe-build": "react-scripts build",
+    "fe-test": "react-scripts test --env=jsdom",
+    "fe-eject": "react-scripts eject"
   },
   "dependencies": {
     "think-cache": "^1.0.0",
@@ -18,7 +22,9 @@
     "think-view-nunjucks": "^1.0.1",
     "think-model-mysql": "^1.0.0",
     "think-logger3": "^1.0.0",
-    "thinkjs": "^3.0.0"
+    "thinkjs": "^3.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -28,7 +34,8 @@
     "think-inspect": "0.0.2",
     "think-babel": "^1.0.3",
     "eslint": "^4.2.0",
-    "eslint-config-think": "^1.0.0"
+    "eslint-config-think": "^1.0.0",
+    "react-scripts": "1.0.14"
   },
   "repository": "",
   "license": "MIT",
