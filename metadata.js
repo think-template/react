@@ -18,7 +18,7 @@ module.exports = {
     "src/**/*.vue",
     "src/assets/*.png",
     "www/static/public/favicon.ico",
-    "www/static/public/thinkjs.png"
+    "www/static/src/thinkjs.png"
   ],
   "filesignore": [
     "src/controller/index.tpl.js",
