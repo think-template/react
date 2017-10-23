@@ -7,10 +7,12 @@
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/",
-    "fe": "react-scripts start",
-    "fe-build": "react-scripts build",
-    "fe-test": "react-scripts test --env=jsdom",
-    "fe-eject": "react-scripts eject"
+    "fe": "npm run copy && cd www/static && react-scripts start",
+    "fe-build": "npm run copy && cd www/static && react-scripts build && npm run copy-html",
+    "fe-test": "npm run copy && cd www/static && react-scripts test --env=jsdom",
+    "fe-eject": "npm run copy && cd www/static && react-scripts eject",
+    "copy":"node -e \"const fs = require('fs');fs.createReadStream('package.json').pipe(fs.createWriteStream('www/static/package.json'));\"",
+    "copy-html":"node -e \"const fs = require('fs');fs.createReadStream('build/index.html').pipe(fs.createWriteStream('../../view/index_index.html'));\""
   },
   "dependencies": {
     "think-cache": "^1.0.0",
@@ -42,5 +44,6 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "homepage": "http://mywebsite.com/static/build"
 }
