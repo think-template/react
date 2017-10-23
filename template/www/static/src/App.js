@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import think from './thinkjs.png';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src="/thinkjs.png" className="App-logo" alt="logo" />
+          <img src={think} className="App-logo" alt="logo" />
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to ThinkJS + React</h1>
         </header>
