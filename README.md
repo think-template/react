@@ -1,2 +1,2 @@
-# standard
-Standard Template
+# react
+ThinkJS React cli template
