@@ -88,7 +88,6 @@ module.exports = {
     ["view/index_index.html", "view/[moduleName]/index_index.html"]
   ],
   "skipCompile": [
-    "nginx.conf",
     "www/static/**/*.png",
     "www/static/**/*.icon",    
   ],
