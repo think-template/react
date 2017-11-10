@@ -27,6 +27,7 @@ module.exports = {
       ["src/logic", "src/logic"],
       ["src/model", "src/model"],
       ["view/index_index.html", "view/index_index.html"],
+      ["www/static", "www/static"],
       ["development.js", "development.js"],
       ["eslintrc", ".eslintrc"],
       ["gitignore", ".gitignore"],
