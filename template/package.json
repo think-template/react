@@ -25,9 +25,7 @@
     "think-view-nunjucks": "^1.0.1",
     "think-model-mysql": "^1.0.0",
     "think-logger3": "^1.0.0",
-    "thinkjs": "^3.0.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "thinkjs": "^3.0.0"
   },
   "devDependencies": {
     "<% if (babel) { %>babel-cli": "^6.24.1",
@@ -38,7 +36,9 @@
     "<% } %>think-watcher": "^3.0.0",
     "eslint": "^4.2.0",
     "eslint-config-think": "^1.0.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "repository": "",
   "license": "MIT",
